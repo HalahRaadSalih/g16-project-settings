@@ -2,6 +2,15 @@
 
 These are the steps for any serverside project
 
+#### In case you're forked an repo, all you have to do is clone it somewhere
+
+	```
+	$ git clone [repo_url]
+	$ cd [reop_name]
+	```
+
+#### In case you're creating a new porject 
+
 - Make a new directory, duh.
 
 	```
@@ -18,3 +27,20 @@ These are the steps for any serverside project
 Great now, you have a new folder and you're set for life, you can find a job, start a family .. 
 
 wait .. What? 
+
+- create a repo 
+
+	```
+	$ git init
+	```
+-  create a [markdown](https://guides.github.com/features/mastering-markdown/) readme file and add a nice description of what that repo is all about. Don't complain, and don't say 'nah, later ..'.
+
+ They're MY instrutions, do as I say. 
+
+	```
+	$ touch readme.md
+	```
+
+
+
+![commit all things](http://i.imgur.com/dGidez2.jpg)
