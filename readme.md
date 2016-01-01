@@ -1,6 +1,12 @@
 ### Project Settings
 
-These are the steps for any serverside project
+These are the steps for any serverside project with :
+
+- NodeJS
+- Express JS
+- Knex
+- ejs
+
 
 #### In the case where you've forked a repo, all you have to do is clone it somewhere
 
@@ -73,7 +79,8 @@ I know, I know .. Me too.
  - Create models,views, controllers folders
  - Create assets folder, with css,images and javascript subfolders.
  - Create server.js 
- - Cd into conrtollers and create router.js
+ - Cd into contollers folder and create router.js
+ - Create db folder with knex.js file inside it
  - Your project after a `tree` command would look like this:
 
  ```
@@ -84,6 +91,8 @@ I know, I know .. Me too.
 	│   └── javascript
 	├── controllers
 	│   └── router.js
+	├── db
+	│   └── knex.js
 	├── models
 	├── readme.md
 	├── server.js
@@ -91,3 +100,24 @@ I know, I know .. Me too.
 
 
  ```
+ 
+ <br>
+ 
+ ### NPM
+ 
+- To create your `package.json` file, which will hold a reference to your project dependencies, use this command:
+ 
+ ```
+ 	$ npm init
+ ```
+ 
+ A `package.json` file should be added to your project directory. 
+ 
+- Install and save all the modules that you need to use in your project.  
+
+	```
+	$ npm install --save express ejs knex body-parser 	method-override morgan locus
+	```
+<br>
+ A `node_modules` directory containing all the modules you've just installed will be added to your project.
+ 
