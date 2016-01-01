@@ -40,7 +40,24 @@ wait .. What?
 	```
 	$ touch readme.md
 	```
+	- Link your remote
 
-
-
+	
+	```
+	$ git remote add origin [repo_url]
+	$ git remote -v
+	```
+<br>
+#### Now
+<br>
 ![commit all things](http://i.imgur.com/dGidez2.jpg)
+
+<br>
+```
+$ git status
+$ git add readme.md
+$ git commit -m "initial commit"
+$ git push origin master
+```
+
+<br>
