@@ -160,15 +160,15 @@ I know, I know .. Me too.
 - Wait, what about that `knex.js` file? What am I going to use that for? Well kids, you're going to use that to tell your knex model what environment you're actually in right now. We've set the development object on `knexfile.js`, but we haven't told knex what that we're actually in development mode yet.. duh!
 - So, how do we tell the knex module what environment we're using? Here is how:
 
-		- open `knex.js`.
-		- add this code:
-		
+	- open knex.js.
+	- add this code:
+		<br>
 
-		```
-		var env = process.env.NODE_ENV || 'development';
-		var config = require('../knexfile')[env];
+	```
+	var env = process.env.NODE_ENV || 'development';
+	var config = require('../knexfile')[env];
 
-		module.exports = require('knex')(config);
-		```
+	module.exports = require('knex')(config);
+	```
  
  
