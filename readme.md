@@ -79,15 +79,15 @@ I know, I know .. Me too.
  ```
  	$ tree
  	├── assets
-│   ├── css
-│   ├── images
-│   └── javascript
-├── controllers
-│   └── router.js
-├── models
-├── readme.md
-├── server.js
-└── views
+	│   ├── css
+	│   ├── images
+	│   └── javascript
+	├── controllers
+	│   └── router.js
+	├── models
+	├── readme.md
+	├── server.js
+	└── views
 
 
  ```
