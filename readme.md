@@ -121,3 +121,42 @@ I know, I know .. Me too.
 <br>
  A `node_modules` directory containing all the modules you've just installed will be added to your project.
  
+ ### KNEX
+	Now that you've just installed [knex](http://knexjs.org/#Builder-update) module, what can we do with it? 
+ 
+ <br>
+ ![take over the world](http://s2.quickmeme.com/img/ca/ca1e82814fbabf4703590d43509c7f4c2c1ce2403a1e634162043cef0a894c7f.jpg)
+ 
+- No, you can't do that; but here is what you can do with it:
+ 
+ ```
+ $ knex init
+ ```
+ 
+- After you enter the above command, a file called `knexfile.js` will be created. This file will contain all database configuration settings. 
+- Since, we're still in development environment open the `knexfile.js` file and head to the developement object. 
+- Before we adjust anything in this file, we need to go back to the terminal and create a database:
+
+	```
+	$ createdb [database-name]
+	```
+- Now, let's head back to our `knexfile.js` file and take a look at that development object:
+	- 	Change your client from `sqlite3` to `postgresql`
+	-  Change the connection 'filename', to 'database'
+	-  Make the [database-name] that you just created the value of the 'database' key for the connection object.
+	-  Add a key called debug and set its value to `true`.
+	-  Your development object should look like this:
+
+	```
+	development: {
+		client: 'postgresql',
+    	connection: {
+      		database: '[database-name]'
+    	},
+    	debug: true
+  	}
+	```
+ 
+ 
+ 
+ 
