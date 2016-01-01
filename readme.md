@@ -2,16 +2,16 @@
 
 These are the steps for any serverside project
 
-#### In case you're forked an repo, all you have to do is clone it somewhere
+#### In the case where you've forked a repo, all you have to do is clone it somewhere
 
 	```
 	$ git clone [repo_url]
 	$ cd [reop_name]
 	```
 
-#### In case you're creating a new porject 
+#### In the case where you're creating a new porject 
 
-- Make a new directory, duh.
+- Make a new directory, duh!
 
 	```
 	$ mkdir [new_project_name]
@@ -35,7 +35,7 @@ wait .. What?
 	```
 -  create a [markdown](https://guides.github.com/features/mastering-markdown/) readme file and add a nice description of what that repo is all about. Don't complain, and don't say 'nah, later ..'.
 
- They're MY instrutions, do as I say. 
+ They're MY instrutions, do as I say. *In Russian Accent*
 
 	```
 	$ touch readme.md
