@@ -4,10 +4,11 @@ These are the steps for any serverside project
 
 #### In the case where you've forked a repo, all you have to do is clone it somewhere
 
-	```
+```
 	$ git clone [repo_url]
 	$ cd [reop_name]
-	```
+	
+```
 
 #### In the case where you're creating a new porject 
 
@@ -35,7 +36,7 @@ wait .. What?
 	```
 -  create a [markdown](https://guides.github.com/features/mastering-markdown/) readme file and add a nice description of what that repo is all about. Don't complain, and don't say 'nah, later ..'.
 
- They're MY instrutions, do as I say. *In Russian Accent*
+ They're MY instrutions, do as I say. 
 
 	```
 	$ touch readme.md
@@ -53,6 +54,7 @@ wait .. What?
 ![commit all things](http://i.imgur.com/dGidez2.jpg)
 
 <br>
+
 ```
 $ git status
 $ git add readme.md
@@ -61,3 +63,31 @@ $ git push origin master
 ```
 
 <br>
+
+![](http://i.imgur.com/k0MjHQf.jpg)
+
+
+I know, I know .. Me too. 
+
+### Folder Structure
+ - Create models,views, controllers folders
+ - Create assets folder, with css,images and javascript subfolders.
+ - Create server.js 
+ - Cd into conrtollers and create router.js
+ - Your project after a `tree` command would look like this:
+
+ ```
+ 	$ tree
+ 	├── assets
+│   ├── css
+│   ├── images
+│   └── javascript
+├── controllers
+│   └── router.js
+├── models
+├── readme.md
+├── server.js
+└── views
+
+
+ ```
