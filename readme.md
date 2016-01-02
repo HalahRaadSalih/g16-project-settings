@@ -47,7 +47,7 @@ wait .. What?
 	```
 	$ touch readme.md
 	```
-	- Link your remote
+- Link your remote
 
 	
 	```
@@ -171,4 +171,33 @@ I know, I know .. Me too.
 	module.exports = require('knex')(config);
 	```
  
+ 
+ ### Migrations
+ For every table, you need a migration. If you're adding a new column to your table, then you need to make a new migration. How do we make a migration for table? 
+ 
+ ```
+ $ knex migrate: make [migration name]
+ ```
+ 
+ A new directory called `migrations` should be created in your project directory. `cd` and `tree` into the folder and check the file that has been created inside that migration .. what's that weird name, huh? 
+ It s the excat date and time the migration hase been created and the name is the migration name you've entered above. Open the file .. 
+ 
+ ![Hmmm](http://i.imgur.com/eptUkTN.jpg)
+ 
+ Me neither. 
+ 
+- Assuming that this migrataion is for authors table, the code should look like this:
+
+ ```
+ exports.up = function(knex, Promise) {
+  	return knex.schema.createTable('authors', 		function(table){
+			table.increments(); // id serial primary key
+			table.string('name');
+	});
+};
+exports.down = function(knex, Promise) {
+    return knex.schema.dropTable('authors');
+};
+
+ ```
  
