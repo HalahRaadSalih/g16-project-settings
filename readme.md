@@ -133,6 +133,8 @@ I know, I know .. Me too.
 	```
 	$ npm install --save express ejs knex body-parser method-override morgan locus
 	```
+	![](http://img.pandawhale.com/post-38843-could-you-fucking-not-chloe-gi-QDAW.gif)
+	<br>
 	
 	What do these modules do? .. 
 	
@@ -252,7 +254,7 @@ exports.down = function(knex, Promise) {
  
  For all those times when plain old html and javascript are just too easy.
  
- Embedded javascript allows you to process your data server-side, and then send it to your ejs templet to render in html. In your routes file, process all of the data you want to show in html into an object and render it. Your server-side code should look something like this:
+ Embedded javascript allows you to process your data server-side, and then send it to your ejs template to render in html. In your `routes.js` file, process all of the data you want to show in html into an object and render it. Your server-side code should look something like this:
  
  ```
  res.render('index', {someData: data});
