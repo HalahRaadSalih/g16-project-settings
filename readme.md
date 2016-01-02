@@ -47,14 +47,14 @@ Great now, you have a new folder and you're set for life, you can find a job, st
 
 wait .. What? 
 
-- create a repo 
+- Create a repo 
 
 	```
 	$ git init
 	```
--  create a [markdown](https://guides.github.com/features/mastering-markdown/) readme file and add a nice description of what that repo is all about. Don't complain, and don't say 'nah, later ..'.
+-  Create a [markdown](https://guides.github.com/features/mastering-markdown/) readme file and add a nice description of what that repo is all about. Don't complain, and don't say 'nah, later ..'.
 
- They're MY instrutions, do as I say. 
+ They're MY instrutions, do as I say. >:-|
 
 	```
 	$ touch readme.md
@@ -91,8 +91,8 @@ I know, I know .. Me too.
 
 ### MVC and Folder Structure
 
- - Create models,views, controllers folders
- - Create assets folder, with css,images and javascript subfolders.
+ - Create models, views, controllers folders
+ - Create assets folder, with css, images and javascript subfolders.
  - Create server.js 
  - Cd into controllers folder and create router.js
  - Create db folder with knex.js file inside it
@@ -138,29 +138,30 @@ I know, I know .. Me too.
 	
 	What do these modules do? .. 
 	
-	- [`express`](https://www.npmjs.com/package/express)? If you're still wondering what does this do, time for another career path, bro. Also, express is a fancy nodeJS framework that spares the need to repeat some nodeJS code to do web services.
+	- [`express`](https://www.npmjs.com/package/express) If you're still wondering this does, its time for another career choice, bro. :P For the layman,  it is essentially a fancy minimalist nodeJS framework that spares the need to repeat sever code for web services.
 	
-	- [`ejs`] (https://www.npmjs.com/package/ejs) it is a view engine that can be used with express js. ejs stands for embeded javascript, which really really means that you can embed javascript in your html code. You can use [Jade](https://www.npmjs.com/package/jade) if you don't like ejs.
-	- [`knex`](https://www.npmjs.com/package/knex) it is a SQL schema and query builder with a javascript synax. I'd like to imagine it as fancy wrapper around SQL. 
-	- [`body-parser`](https://www.npmjs.com/package/body-parser) how I've used it so far, it basically parses the form input fields with their values into an object that you can access from a server request property called body.
+	- [`ejs`] (https://www.npmjs.com/package/ejs) is a view engine that can be used with express.js, it stands for 'embeded javascript', which means that you can embed your javascript code with your html. Their are many options out in the wild, I personally like to use [Jade](https://www.npmjs.com/package/jade) in place of ejs.
+	- [`knex`](https://www.npmjs.com/package/knex) is a SQL schema and query builder with a javascript synax. I'd like to imagine it as a fancy wrapper around SQL. 
+	- [`body-parser`](https://www.npmjs.com/package/body-parser) basically parses the form input fields for their values and places them into an object that you can be accessed with a server request.
+		- For example, if I were to need the value of a text input, body-parser would place that text into an object that is held as the value of the **body** key that I could then access via a request: 
 
-		```
-		req.body
-		```
+			```
+			req.body
+			```
 		
-	- [`method-override`](https://www.npmjs.com/package/method-override) to your own dismay and mine, HTML forms doesn't support request verbs PUT and DELETE, so we need the method-override module to that for us. 
-	- [`morgan`](https://www.npmjs.com/package/morgan) this one logs to your console what ever request that took place.
-	- [`locus`](https://www.npmjs.com/package/locus) the website says it allows to open a REPL during your program execution, with access to all variables, and that's exactly what locus do.
+	- [`method-override`](https://www.npmjs.com/package/method-override) to your own dismay and mine, HTML forms don't support request verbs PUT and DELETE, so we need the method-override module to give us that flexibility. 
+	- [`morgan`](https://www.npmjs.com/package/morgan) logs into your terminal console every request that takes place. Good for debugging. 
+	- [`locus`](https://www.npmjs.com/package/locus) opens a REPL during your program execution, allowing access to all variables. Again, amazing for debugging. 
 
 <br>
 
-- A `node_modules` directory containing all the modules you've just installed will be added to your project after that `npm install` command.
+- After the `npm install` command, a `node_modules` directory containing all these modules and any others you've installed, will be added to your project.
  
 <br>
  
 ### KNEX
  
-Now that you've just installed [knex](http://knexjs.org/#Builder-update) module, what can we do with it? 
+Now that you've just installed the [knex](http://knexjs.org/#Builder-update) module, what do we do with it? 
  
  <br>
  ![take over the world](http://s2.quickmeme.com/img/ca/ca1e82814fbabf4703590d43509c7f4c2c1ce2403a1e634162043cef0a894c7f.jpg)
@@ -171,8 +172,8 @@ Now that you've just installed [knex](http://knexjs.org/#Builder-update) module,
  $ knex init
  ```
  
-- After you enter the above command, a file called `knexfile.js` will be created. This file will contain all database configuration settings. 
-- Since, we're still in development environment open the `knexfile.js` file and head to the developement object. 
+- After you enter the above command, a file called `knexfile.js` will be created. This file will contain all the database configuration settings. 
+- Since we're still in the development environment open the `knexfile.js` file and head to the developement object. 
 - Before we adjust anything in this file, we need to go back to the terminal and create a database:
 
 	```
@@ -195,7 +196,7 @@ Now that you've just installed [knex](http://knexjs.org/#Builder-update) module,
   	}
 	```
  
-- Wait, what about that `knex.js` file? What am I going to use that for? Well kids, you're going to use that to tell your knex model what environment you're actually in right now. We've set the development object on `knexfile.js`, but we haven't told knex what that we're actually in development mode yet.. duh!
+- Wait, what about that `knex.js` file? What am I going to use that for? Well kids, you're going to use that to tell your knex model what environment you're actually in right now. We've set the development object in the `knexfile.js` file, but we haven't told knex that we're actually in development mode yet.. duh!
 - So, how do we tell the knex module what environment we're using? Here is how:
 
 	- open knex.js.
@@ -212,20 +213,22 @@ Now that you've just installed [knex](http://knexjs.org/#Builder-update) module,
  
 ### Migrations
 
- For every table, you need a migration. If you're adding a new column to your table, then you need to make a new migration. How do we make a migration for table? 
+ For every table, you need a migration. In addition to this, if you're adding a new column to your table you will also need to make a new migration. 
+ 
+ How do we make a new migration for table? 
  
  ```
  $ knex migrate: make [migration name]
  ```
  
- A new directory called `migrations` should be created in your project directory. `cd` and `tree` into the folder and check the file that has been created inside that migration .. what's that weird name, huh? 
- It's the exact date and time the migration has been created and the name is the migration name you've entered above. Open the file .. 
+ A new directory called `migrations` should be created in your project directory. `cd` and `tree` into the folder and check the file that has been created inside that migration ...wait, what's that weird number filled name?... 
+ It's the exact date and time the migration had been created and the name is the migration name you've entered above. Open the file .. 
  
  ![Hmmm](http://i.imgur.com/eptUkTN.jpg)
  
  Me neither. 
  
-- Assuming that this migration is for authors table, the code should look like this:
+- Assuming that this migration is for the author's table for the knex Library assignment, the code should look like this:
 
  ```
  exports.up = function(knex, Promise) {
@@ -240,13 +243,13 @@ exports.down = function(knex, Promise) {
 
  ```
  
-- One more thing .. you still need to run that migration, how do we do that? 
+- One more thing ... you need to run the migration by entering: 
 
  ```
  knex migrate: latest
  ```
 
-- You  need to run the command above after you `make` a migration, meaning after you're done with  creating all your mingations at that point.
+- This command must be run after you `make`a migration ie. after you're done with creating all your migrations up to a certain point.
 
 <br> 
  
@@ -254,19 +257,20 @@ exports.down = function(knex, Promise) {
  
  For all those times when plain old html and javascript are just too easy.
  
- Embedded javascript allows you to process your data server-side, and then send it to your ejs template to render in html. In your `routes.js` file, process all of the data you want to show in html into an object and render it. Your server-side code should look something like this:
+Embedded javascript allows you to process your data server-side, and then send it to your ejs template to render in html. In your `routes.js` file, process all of the data you want to show in html into an object and render it. Your server-side code should look something like this:
+
  
  ```
  res.render('index', {someData: data});
  ```
  Where index is your `index.ejs` page and `{someData: data}` is the object you are rendering.
  
- Now for the fun part! ejs mosies along over to your `index.ejs` page, and looks for anything inside the ejs tags that matches someData.
+ Now for the fun part! ejs mosies over to your `index.ejs` page, and looks for anything inside the ejs tags that matches someData.
  
  - `<% %>` for regular javascript
  - `<%= %>` for where code is being turned into html
  
- Your equivalent ejs code should look something like this:
+ The equivalent ejs code should look something like this:
  
  ```
  <% someData.forEach(function(data) { %> 
