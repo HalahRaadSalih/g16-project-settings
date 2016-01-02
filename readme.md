@@ -233,11 +233,12 @@ exports.down = function(knex, Promise) {
  ```
  res.render('index', {someData: data});
  ```
- Where index is your index.ejs page and {someData: data} is the object you are rendering.
+ Where index is your `index.ejs` page and `{someData: data}` is the object you are rendering.
  
- Now for the fun part! ejs mosies along over to your index.ejs page, and looks for anything inside the ejs tags that matches someData.
- - <% %> for regular javascript
- - <%= %> for where code is being turned into html
+ Now for the fun part! ejs mosies along over to your `index.ejs` page, and looks for anything inside the ejs tags that matches someData.
+ 
+ - `<% %>` for regular javascript
+ - `<%= %>` for where code is being turned into html
  
  Your equivalent ejs code should look something like this:
  
