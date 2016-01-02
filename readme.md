@@ -1,14 +1,26 @@
-### Project Settings
+## Project Settings
 
 These are the steps for any serverside project with :
 
 - NodeJS
 - Express JS
 - Knex
-- ejs
+- EJS
 
 
-#### In the case where you've forked a repo, all you have to do is clone it somewhere
+## Table Of Contents
+
+- Git and Github
+- MVC 
+- NPM
+- KNEX
+- Migrations
+- EJS
+
+
+### Git and Github
+
+ In the case where you've forked a repo, all you have to do is clone it somewhere
 
 ```
 	$ git clone [repo_url]
@@ -16,7 +28,7 @@ These are the steps for any serverside project with :
 	
 ```
 
-#### In the case where you're creating a new project 
+In the case where you're creating a new project 
 
 - Make a new directory, duh!
 
