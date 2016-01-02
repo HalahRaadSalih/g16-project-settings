@@ -226,6 +226,14 @@ exports.down = function(knex, Promise) {
 
  ```
  
+- One more thing .. you still need to run that migration, how do we do that? 
+
+ ```
+ knex migrate: latest
+ ```
+
+- You  need to run the command above after you `make` a migration, meaning after you're done with  creating all your mingations at that point.
+
 <br> 
  
 ### EJS
