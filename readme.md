@@ -12,11 +12,11 @@ These are the steps for any serverside project with :
 
 ```
 	$ git clone [repo_url]
-	$ cd [reop_name]
+	$ cd [repo_name]
 	
 ```
 
-#### In the case where you're creating a new porject 
+#### In the case where you're creating a new project 
 
 - Make a new directory, duh!
 
@@ -79,7 +79,7 @@ I know, I know .. Me too.
  - Create models,views, controllers folders
  - Create assets folder, with css,images and javascript subfolders.
  - Create server.js 
- - Cd into contollers folder and create router.js
+ - Cd into controllers folder and create router.js
  - Create db folder with knex.js file inside it
  - Your project after a `tree` command would look like this:
 
@@ -180,13 +180,13 @@ I know, I know .. Me too.
  ```
  
  A new directory called `migrations` should be created in your project directory. `cd` and `tree` into the folder and check the file that has been created inside that migration .. what's that weird name, huh? 
- It s the excat date and time the migration hase been created and the name is the migration name you've entered above. Open the file .. 
+ It's the exact date and time the migration has been created and the name is the migration name you've entered above. Open the file .. 
  
  ![Hmmm](http://i.imgur.com/eptUkTN.jpg)
  
  Me neither. 
  
-- Assuming that this migrataion is for authors table, the code should look like this:
+- Assuming that this migration is for authors table, the code should look like this:
 
  ```
  exports.up = function(knex, Promise) {
@@ -201,3 +201,26 @@ exports.down = function(knex, Promise) {
 
  ```
  
+ ### ejs
+ 
+ For all those times when plain old html and javascript are just too easy.
+ 
+ Embedded javascript allows you to process your data server-side, and then send it to your ejs templet to render in html. In your routes file, process all of the data you want to show in html into an object and render it. Your server-side code should look something like this:
+ 
+ ```
+ res.render('index', {someData: data});
+ ```
+ Where index is your index.ejs page and {someData: data} is the object you are rendering.
+ 
+ Now for the fun part! ejs mosies along over to your index.ejs page, and looks for anything inside the ejs tags that matches someData.
+ - <% %> for regular javascript
+ - <%= %> for where code is being turned into html
+ 
+ Your equivalent ejs code should look something like this:
+ 
+ ```
+ <% someData.forEach(function(data) { %> 
+     <%= data.whatever %>     
+<% }); %>
+
+ ```
