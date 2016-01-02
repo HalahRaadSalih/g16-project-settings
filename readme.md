@@ -13,7 +13,7 @@ These are the steps for any serverside project with :
 - [Git and Github](https://github.com/HalahRaadSalih/g16-project-settings#git-and-github)
 - [MVC](https://github.com/HalahRaadSalih/g16-project-settings#mvc-and-folder-structure) 
 - [NPM](https://github.com/HalahRaadSalih/g16-project-settings#npm)
-- [KNEX](https://github.com/HalahRaadSalih/g16-project-settings#ejs)
+- [KNEX](https://github.com/HalahRaadSalih/g16-project-settings#knex)
 - [Migrations](https://github.com/HalahRaadSalih/g16-project-settings#migration)
 - [EJS](https://github.com/HalahRaadSalih/g16-project-settings#ejs)
 
