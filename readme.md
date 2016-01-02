@@ -55,7 +55,9 @@ wait .. What?
 	$ git remote -v
 	```
 <br>
+
 #### Now
+
 <br>
 ![commit all things](http://i.imgur.com/dGidez2.jpg)
 
@@ -76,6 +78,7 @@ $ git push origin master
 I know, I know .. Me too. 
 
 ### Folder Structure
+
  - Create models,views, controllers folders
  - Create assets folder, with css,images and javascript subfolders.
  - Create server.js 
@@ -103,7 +106,7 @@ I know, I know .. Me too.
  
  <br>
  
- ### NPM
+### NPM
  
 - To create your `package.json` file, which will hold a reference to your project dependencies, use this command:
  
@@ -193,7 +196,8 @@ Now that you've just installed [knex](http://knexjs.org/#Builder-update) module,
 	```
  
  
- ### Migrations
+### Migrations
+
  For every table, you need a migration. If you're adding a new column to your table, then you need to make a new migration. How do we make a migration for table? 
  
  ```
