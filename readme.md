@@ -116,13 +116,34 @@ I know, I know .. Me too.
 - Install and save all the modules that you need to use in your project.  
 
 	```
-	$ npm install --save express ejs knex body-parser 	method-override morgan locus
+	$ npm install --save express ejs knex body-parser method-override morgan locus
 	```
+	
+	What do these modules do? .. 
+	
+	- [`express`](https://www.npmjs.com/package/express)? If you're still wondering what does this do, time for another career path, bro. Also, express is a fancy nodeJS framework that spares the need to repeat some nodeJS code to do web services.
+	
+	- [`ejs`] (https://www.npmjs.com/package/ejs) it is a view engine that can be used with express js. ejs stands for embeded javascript, which really really means that you can embed javascript in your html code. 
+	- [`knex`](https://www.npmjs.com/package/knex) it is a SQL schema and query builder with a javascript synax. I'd like to imagine it as fancy wrapper around SQL. 
+	- [`body-parser`](https://www.npmjs.com/package/body-parser) how I've used it so far, it basically parses the form input fields with their values into an object that you can access from a server request property called body.
+
+		```
+		req.body
+		```
+		
+	- [`method-override`](https://www.npmjs.com/package/method-override) to your own dismay and mine, HTML forms doesn't support request verbs PUT and DELETE, so we need the method-override module to that for us. 
+	- [`morgan`](https://www.npmjs.com/package/morgan) this one logs to your console what ever request that took place.
+	- [`locus`](https://www.npmjs.com/package/locus) the website says it allows to open a REPL during your program execution, with access to all variables, and that's exactly what locus do.
+
 <br>
- A `node_modules` directory containing all the modules you've just installed will be added to your project.
+
+- A `node_modules` directory containing all the modules you've just installed will be added to your project after that `npm install` command.
  
- ### KNEX
-	Now that you've just installed [knex](http://knexjs.org/#Builder-update) module, what can we do with it? 
+<br>
+ 
+### KNEX
+ 
+Now that you've just installed [knex](http://knexjs.org/#Builder-update) module, what can we do with it? 
  
  <br>
  ![take over the world](http://s2.quickmeme.com/img/ca/ca1e82814fbabf4703590d43509c7f4c2c1ce2403a1e634162043cef0a894c7f.jpg)
