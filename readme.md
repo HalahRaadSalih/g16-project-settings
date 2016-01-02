@@ -14,7 +14,7 @@ These are the steps for any serverside project with :
 - [MVC](https://github.com/HalahRaadSalih/g16-project-settings#mvc-and-folder-structure) 
 - [NPM](https://github.com/HalahRaadSalih/g16-project-settings#npm)
 - [KNEX](https://github.com/HalahRaadSalih/g16-project-settings#knex)
-- [Migrations](https://github.com/HalahRaadSalih/g16-project-settings#migration)
+- [Migrations](https://github.com/HalahRaadSalih/g16-project-settings#migrations)
 - [EJS](https://github.com/HalahRaadSalih/g16-project-settings#ejs)
 
 
@@ -138,7 +138,7 @@ I know, I know .. Me too.
 	
 	- [`express`](https://www.npmjs.com/package/express)? If you're still wondering what does this do, time for another career path, bro. Also, express is a fancy nodeJS framework that spares the need to repeat some nodeJS code to do web services.
 	
-	- [`ejs`] (https://www.npmjs.com/package/ejs) it is a view engine that can be used with express js. ejs stands for embeded javascript, which really really means that you can embed javascript in your html code. 
+	- [`ejs`] (https://www.npmjs.com/package/ejs) it is a view engine that can be used with express js. ejs stands for embeded javascript, which really really means that you can embed javascript in your html code. You can use [Jade](https://www.npmjs.com/package/jade) if you don't like ejs.
 	- [`knex`](https://www.npmjs.com/package/knex) it is a SQL schema and query builder with a javascript synax. I'd like to imagine it as fancy wrapper around SQL. 
 	- [`body-parser`](https://www.npmjs.com/package/body-parser) how I've used it so far, it basically parses the form input fields with their values into an object that you can access from a server request property called body.
 
