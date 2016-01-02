@@ -222,7 +222,9 @@ exports.down = function(knex, Promise) {
 
  ```
  
- ### ejs
+<br> 
+ 
+### EJS
  
  For all those times when plain old html and javascript are just too easy.
  
@@ -242,6 +244,6 @@ exports.down = function(knex, Promise) {
  ```
  <% someData.forEach(function(data) { %> 
      <%= data.whatever %>     
-<% }); %>
+ <% }); %>
 
  ```
