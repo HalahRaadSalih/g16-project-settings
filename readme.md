@@ -10,12 +10,12 @@ These are the steps for any serverside project with :
 
 ## Table Of Contents
 
-- Git and Github
-- MVC 
-- NPM
-- KNEX
-- Migrations
-- EJS
+- [Git and Github](https://github.com/HalahRaadSalih/g16-project-settings#git-and-github)
+- [MVC](https://github.com/HalahRaadSalih/g16-project-settings#mvc-and-folder-structure) 
+- [NPM](https://github.com/HalahRaadSalih/g16-project-settings#npm)
+- [KNEX](https://github.com/HalahRaadSalih/g16-project-settings#ejs)
+- [Migrations](https://github.com/HalahRaadSalih/g16-project-settings#migration)
+- [EJS](https://github.com/HalahRaadSalih/g16-project-settings#ejs)
 
 
 ### Git and Github
@@ -89,7 +89,7 @@ $ git push origin master
 
 I know, I know .. Me too. 
 
-### Folder Structure
+### MVC and Folder Structure
 
  - Create models,views, controllers folders
  - Create assets folder, with css,images and javascript subfolders.
