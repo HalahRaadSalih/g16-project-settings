@@ -16,6 +16,7 @@ These are the steps for any serverside project with :
 - [KNEX](https://github.com/HalahRaadSalih/g16-project-settings#knex)
 - [Migrations](https://github.com/HalahRaadSalih/g16-project-settings#migrations)
 - [EJS](https://github.com/HalahRaadSalih/g16-project-settings#ejs)
+- [GitIgnore](https://github.com/HalahRaadSalih/g16-project-settings#gitignore)
 
 
 ### Git and Github
