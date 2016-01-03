@@ -276,5 +276,20 @@ Embedded javascript allows you to process your data server-side, and then send i
  <% someData.forEach(function(data) { %> 
      <%= data.whatever %>     
  <% }); %>
-
  ```
+ 
+ <br>
+ 
+### Gitignore
+
+We need to ignore some files because they're annoying. Files that within `node_modules` and any `.DS_Store` file ought to be added to the `.gitignore` file. How do we do that? 
+	
+- In your `terminal` :
+
+	```
+	$ echo node_modules > .gitignore
+	$ echo .DS_Store >> .gitignore
+	``` 
+	
+	- `>` adds a new text to file
+	- `>>` appends a new text to file
