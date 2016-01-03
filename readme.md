@@ -140,7 +140,7 @@ I know, I know .. Me too.
 	
 	- [`express`](https://www.npmjs.com/package/express) If you're still wondering what this does, it's time for another career choice, bro. For the layman,  it is essentially a fancy minimalist NodeJS framework that spares the need to repeat sever code for web services.
 	
-	- [`ejs`] (https://www.npmjs.com/package/ejs) is a view engine that can be used with express.js, it stands for 'embeded javascript', which means that you can embed your javascript code with your html. Their are many options out in the wild, I personally like to use [Jade](https://www.npmjs.com/package/jade) in place of ejs.
+	- [`ejs`] (https://www.npmjs.com/package/ejs) is a view engine that can be used with express.js, it stands for 'embeded javascript', which means that you can embed your javascript code with your html. Their are many options out in the wild, you can use [Jade](https://www.npmjs.com/package/jade) in place of ejs.
 	- [`knex`](https://www.npmjs.com/package/knex) is a SQL schema and query builder with a javascript synax. I'd like to imagine it as a fancy wrapper around SQL. 
 	- [`body-parser`](https://www.npmjs.com/package/body-parser) basically parses the form input fields for their values and places them into an object that you can be accessed with a server request.
 		- For example, if I were to need the value of a text input, body-parser would place that text into an object that is held as the value of the **body** key that I could then access via a request: 
