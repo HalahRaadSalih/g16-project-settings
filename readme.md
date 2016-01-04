@@ -17,7 +17,7 @@ These are the steps for any serverside project with :
 - [Migrations](https://github.com/HalahRaadSalih/g16-project-settings#migrations)
 - [EJS](https://github.com/HalahRaadSalih/g16-project-settings#ejs)
 - [GitIgnore](https://github.com/HalahRaadSalih/g16-project-settings#gitignore)
-
+- [PSQL](https://github.com/HalahRaadSalih/g16-project-settings#psql)
 
 ### Git and Github
 
