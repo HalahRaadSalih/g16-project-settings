@@ -294,3 +294,41 @@ We need to ignore some files because they're annoying. Files that within `node_m
 	
 	- `>` adds a new text to file
 	- `>>` appends a new text to file
+
+<br>	
+###PSQL
+
+Some useful commands that helps you debug your database.
+
+- In the event of forgeting what is the name of your databse:
+
+	- You enter your PSQL repl using this command:
+
+		```
+	 	$ \psql
+		```
+	
+	- `HalahAlShaikhly=#` this tells you, yep dude, you're in the zone. (It could be your name, not mine).
+	- Back to checking how do I figure out what's the name of my database? Now that you're in the zone, you can insert the following command, which displays all your databases:
+
+		```
+		\list 
+		```  
+	- There is another version of that command and it this : `\l`
+	- What if you want to check your tables? Now that you know what the name of your data base is, let's assume that I mine `banana`, I need to connect to that database first, then check what the tables that I could possibly have are. How do we connect to database? Just like that:
+	
+		```
+		\connect banana
+		// now you're connect to your banana database,
+		banana#
+		```
+	-  There is another version of that command which is `\c banana`
+	- Great now, you're connected. Use the following command to check your tables:
+
+		```
+		\dt
+		```
+		
+		
+		
+
