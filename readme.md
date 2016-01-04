@@ -132,7 +132,7 @@ I know, I know .. Me too.
 - Install and save all the modules that you need to use in your project.  
 
 	```
-	$ npm install --save express ejs knex body-parser method-override morgan locus
+	$ npm install --save express ejs pg knex body-parser method-override morgan locus
 	```
 	![](http://img.pandawhale.com/post-38843-could-you-fucking-not-chloe-gi-QDAW.gif)
 	<br>
@@ -219,7 +219,7 @@ Now that you've just installed the [knex](http://knexjs.org/#Builder-update) mod
  How do we make a new migration for table? 
  
  ```
- $ knex migrate: make [migration name]
+ $ knex migrate:make [migration name]
  ```
  
  A new directory called `migrations` should be created in your project directory. `cd` and `tree` into the folder and check the file that has been created inside that migration ...wait, what's that weird number filled name?... 
