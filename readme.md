@@ -315,7 +315,7 @@ Some useful commands that helps you debug your database.
 		\list 
 		```  
 	- There is another version of that command and it this : `\l`
-	- What if you want to check your tables? Now that you know what the name of your data base is, let's assume that I mine `banana`, I need to connect to that database first, then check what the tables that I could possibly have are. How do we connect to database? Just like that:
+	- What if you want to check your tables? Now that you know what the name of your database is, let's assume that I named mine `banana`, I need to connect to that database first, then check what the tables that I could possibly have. How do we connect to database? Just like that:
 	
 		```
 		\connect banana
