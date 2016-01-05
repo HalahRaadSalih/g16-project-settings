@@ -283,7 +283,7 @@ Embedded javascript allows you to process your data server-side, and then send i
  
 ### Gitignore
 
-We need to ignore some files because they're annoying. Files that within `node_modules` and any `.DS_Store` file ought to be added to the `.gitignore` file. How do we do that? 
+We need to ignore some files because they're annoying. First make sure you have a gitignore, if you don't, then `touch .gitignore`. Files that are within `node_modules` and any `.DS_Store` file ought to be added to the `.gitignore` file. How do we do that? 
 	
 - In your `terminal` :
 
