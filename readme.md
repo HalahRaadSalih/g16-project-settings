@@ -29,6 +29,8 @@ These are the steps for any serverside project with :
 	
 ```
 
+In the event of forking/clonig a repo that has some dependencies, you need to run `npm install` to have those depencies up and running on your copy of that repo.
+
 In the case where you're creating a new project 
 
 - Make a new directory, duh!
@@ -328,7 +330,3 @@ Some useful commands that helps you debug your database.
 		```
 		\dt
 		```
-		
-		
-		
-
