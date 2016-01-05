@@ -247,7 +247,7 @@ exports.down = function(knex, Promise) {
 - One more thing ... you need to run the migration by entering: 
 
  ```
- knex migrate: latest
+ knex migrate:latest
  ```
 
 - This command must be run after you `make`a migration ie. after you're done with creating all your migrations up to a certain point.
