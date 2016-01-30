@@ -1,6 +1,6 @@
 ## Project Settings
 
-These are the steps for any serverside project with :
+These are the steps for any server-side project with :
 
 - NodeJS
 - Express JS
@@ -29,7 +29,7 @@ These are the steps for any serverside project with :
 	
 ```
 
-In the event of forking/clonig a repo that has some dependencies, you need to run `npm install` to have those depencies up and running on your copy of that repo.
+In the event of forking/cloning a repo that has some dependencies, you need to run `npm install` to have those dependencies up and running on your copy of that repo.
 
 In the case where you're creating a new project 
 
@@ -57,7 +57,7 @@ wait .. What?
 	```
 -  Create a [markdown](https://guides.github.com/features/mastering-markdown/) readme file and add a nice description of what that repo is all about. Don't complain, and don't say 'nah, later ..'.
 
- They're MY instrutions, do as I say. >:-|
+ They're MY instructions, do as I say. >:-|
 
 	```
 	$ touch readme.md
@@ -143,8 +143,8 @@ I know, I know .. Me too.
 	
 	- [`express`](https://www.npmjs.com/package/express) If you're still wondering what this does, it's time for another career choice, bro. For the layman,  it is essentially a fancy minimalist NodeJS framework that spares the need to repeat sever code for web services.
 	
-	- [`ejs`] (https://www.npmjs.com/package/ejs) is a view engine that can be used with express.js, it stands for 'embeded javascript', which means that you can embed your javascript code with your html. Their are many options out in the wild, you can use [Jade](https://www.npmjs.com/package/jade) in place of ejs.
-	- [`knex`](https://www.npmjs.com/package/knex) is a SQL schema and query builder with a javascript synax. I'd like to imagine it as a fancy wrapper around SQL. 
+	- [`ejs`] (https://www.npmjs.com/package/ejs) is a view engine that can be used with express.js, it stands for 'embedded javascript', which means that you can embed your javascript code with your html. Their are many options out in the wild, you can use [Jade](https://www.npmjs.com/package/jade) in place of ejs.
+	- [`knex`](https://www.npmjs.com/package/knex) is a SQL schema and query builder with a javascript syntax. I'd like to imagine it as a fancy wrapper around SQL. 
 	- [`body-parser`](https://www.npmjs.com/package/body-parser) basically parses the form input fields for their values and places them into an object that you can be accessed with a server request.
 		- For example, if I were to need the value of a text input, body-parser would place that text into an object that is held as the value of the **body** key that I could then access via a request: 
 
@@ -176,7 +176,7 @@ Now that you've just installed the [knex](http://knexjs.org/#Builder-update) mod
  ```
  
 - After you enter the above command, a file called `knexfile.js` will be created. This file will contain all the database configuration settings. 
-- Since we're still in the development environment open the `knexfile.js` file and head to the developement object. 
+- Since we're still in the development environment open the `knexfile.js` file and head to the development object. 
 - Before we adjust anything in this file, we need to go back to the terminal and create a database:
 
 	```
@@ -252,7 +252,7 @@ exports.down = function(knex, Promise) {
  knex migrate:latest
  ```
 
-- This command must be run after you `make`a migration ie. after you're done with creating all your migrations up to a certain point.
+- This command must be run after you `make`a migration i.e.. after you're done with creating all your migrations up to a certain point.
 
 <br> 
  
@@ -268,7 +268,7 @@ Embedded javascript allows you to process your data server-side, and then send i
  ```
  Where index is your `index.ejs` page and `{someData: data}` is the object you are rendering.
  
- Now for the fun part! ejs mosies over to your `index.ejs` page, and looks for anything inside the ejs tags that matches someData.
+ Now for the fun part! ejs moves over to your `index.ejs` page, and looks for anything inside the ejs tags that matches someData.
  
  - `<% %>` for regular javascript
  - `<%= %>` for where code is being turned into html
@@ -302,7 +302,7 @@ We need to ignore some files because they're annoying. First make sure you have 
 
 Some useful commands that helps you debug your database.
 
-- In the event of forgeting what is the name of your databse:
+- In the event of forgetting what is the name of your database:
 
 	- You enter your PSQL repl using this command:
 
